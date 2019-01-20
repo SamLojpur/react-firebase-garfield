@@ -52,13 +52,15 @@ class Comparitor extends Component {
 			downVote = this.stripA.current.getPanelIds();
 			alert("you chose 2")
 		}
-		
+
+		this.vote(1,upVote);
+		this.vote(-1,downVote);
 
 		this.generate();
 	}
 
-	vote(type,ids){
-		return 0;
+	vote(weight,ids){
+		alert("add "+weight+" to panels: "+ids);
 	}
 
 	render() {
