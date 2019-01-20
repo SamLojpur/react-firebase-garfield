@@ -16,7 +16,7 @@ class ComicStrip extends Component {
 		return (
 			<div className="reconComic">
 				<div> 
-					{panelA} 
+					{this.props.panelA} 
 				</div>
 			</div>
 		);
@@ -36,5 +36,7 @@ class App extends Component {
 		);
 	}
 }
+
+
 
 export default App;
