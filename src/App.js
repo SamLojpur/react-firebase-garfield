@@ -21,7 +21,9 @@ export default class Page extends React.Component {
             alert("comic 1 clicked");
         } else {
             alert("comic 2 clicked");
-        }
+		}
+		
+		this.getImages();
     }
 
     getImages() {
@@ -61,7 +63,7 @@ export default class Page extends React.Component {
 								<img src={this.state.URL.B2} className="panelImg"></img>
 								<img src={this.state.URL.C2} className="panelImg"></img>
 							</ImageContainer>
-						</div>
+						</div>	
 					</header>
                 </div>
             )
