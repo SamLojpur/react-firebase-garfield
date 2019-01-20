@@ -30,4 +30,4 @@ yarn-error.log*
 /public/panels/*
 
 #API Key
-/src/Firebase.js
+Firebase.js
