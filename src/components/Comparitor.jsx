@@ -71,7 +71,7 @@ export default class Comparitor extends Component {
 				<div onClick={() => {this.choose(1)}}>
 					<ComicStrip ref={this.stripA} />
 				</div>
-				Which is funnier?
+				<span><b>⬆️ 😸 Which is funnier? Click or Tap on your favourite! 😸 ⬇️</b></span>	
 				<div onClick={() => {this.choose(2)}}>
 					<ComicStrip ref={this.stripB} />
 				</div>
