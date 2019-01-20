@@ -79,3 +79,20 @@ exports.getPanel = functions.https.onRequest((req, res) => {
       })
     })
   })
+  
+  
+exports.panelUpdate = functions.https.onRequest((req, res) => {
+   return cors(req, res, () => {
+     if(req.method !== 'POST') {
+       return res.status(401).json({
+         message: 'Not allowed'
+       })
+     }
+      console.log(req.body);
+     }, (error) => {
+       res.status(error.code).json({
+         message: `Something went wrong. ${error.message}`
+       })
+     })
+   })
+ })

@@ -15,13 +15,10 @@ export default class Comparitor extends Component {
 
 	generate(){
 		var	url = 'https://us-central1-searchforthebestgarfieldcomic.cloudfunctions.net/getPanel'
-		axios.get(url, { crossdomain: true }).then((response) => {
-			for( i in response.data){
-				if(i < 3){
-					stripA.setData
-				}
-			}
-			
+		axios.get(url, { crossdomain: true }).then((res) => {
+			this.stripA.current.setState(
+				{urlA: "./panels/"+res.data[0].items, idA: res.data[0].id,
+				 urlB: "./panels/"+res.data[1].items, idB: res.data[1].id})	
 		});
 	}
 	

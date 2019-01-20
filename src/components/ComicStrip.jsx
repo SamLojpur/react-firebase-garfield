@@ -20,7 +20,7 @@ export default class ComicStrip extends Component {
 	render() {
 		return (
 			<div className="reconComic" onClick={this.handleClick}>
-				<img className="panelImg" alt="panelA" src={this.state.urlA} />
+				<img className="panelImg"  src={this.state.urlA} />
 				<img className="panelImg" alt="panelB" src={this.state.urlB} />
 				<img className="panelImg" alt="panelC" src={this.state.urlC} />
 			</div>
