@@ -23,7 +23,8 @@
 }
 
 .panelImg {
-	height: 27vw;	
+  height: 27vw;
+  max-height: 40vh;	
 }
 
 @keyframes App-logo-spin {
