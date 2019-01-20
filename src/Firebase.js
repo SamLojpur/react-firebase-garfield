@@ -5,6 +5,7 @@ import 'firebase/database';
 
 let config = {
     apiKey: "API_KEY",
+    //please dont commit this
     authDomain: "searchforthebestgarfieldcomic.firebaseapp.com",
     databaseURL: "https://searchforthebestgarfieldcomic.firebaseio.com",
     projectId: "searchforthebestgarfieldcomic",
