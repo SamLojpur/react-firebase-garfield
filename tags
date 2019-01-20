@@ -9,6 +9,7 @@
 .App-header	src/App.css	/^.App-header {$/;"	c
 .App-link	src/App.css	/^.App-link {$/;"	c
 .App-logo	src/App.css	/^.App-logo {$/;"	c
+.panelImg	src/App.css	/^.panelImg {$/;"	c
 .read	database.rules.json	/^    ".read": "auth != null",$/;"	s	object:rules
 .write	database.rules.json	/^    ".write": "auth != null"$/;"	s	object:rules
 0	firebase.json	/^      "firebase.json",$/;"	s	array:hosting.ignore
@@ -472,6 +473,7 @@
 @xtuc/long	package-lock.json	/^    "@xtuc\/long": {$/;"	o	object:dependencies
 App	src/App.js	/^class App extends Component {$/;"	c
 ComicStrip	src/App.js	/^class ComicStrip extends Component {$/;"	c
+Comparitor	src/App.js	/^class Comparitor extends Component {$/;"	c
 abab	package-lock.json	/^            "abab": "^2.0.0",$/;"	s	object:dependencies.jest-environment-jsdom.dependencies.jsdom.requires
 abab	package-lock.json	/^        "abab": "^2.0.0",$/;"	s	object:dependencies.data-urls.requires
 abab	package-lock.json	/^        "abab": "^2.0.0",$/;"	s	object:dependencies.jsdom.requires
@@ -1290,6 +1292,7 @@ chokidar	package-lock.json	/^        "chokidar": "^2.0.0",$/;"	s	object:dependen
 chokidar	package-lock.json	/^        "chokidar": "^2.0.2",$/;"	s	object:dependencies.watchpack.requires
 chokidar	package-lock.json	/^        "chokidar": "^2.0.4",$/;"	s	object:dependencies.fork-ts-checker-webpack-plugin-alt.requires
 chokidar	package-lock.json	/^    "chokidar": {$/;"	o	object:dependencies
+choose	src/App.js	/^	choose(choice) {$/;"	m	class:Comparitor
 chownr	package-lock.json	/^            "chownr": "^1.0.1",$/;"	s	object:dependencies.fsevents.dependencies.tar.requires
 chownr	package-lock.json	/^            "chownr": "^1.0.1",$/;"	s	object:dependencies.uglifyjs-webpack-plugin.dependencies.cacache.requires
 chownr	package-lock.json	/^        "chownr": "^1.1.1",$/;"	s	object:dependencies.cacache.requires
@@ -1391,6 +1394,7 @@ console-control-strings	package-lock.json	/^        "console-control-strings": {
 constants-browserify	package-lock.json	/^        "constants-browserify": "^1.0.0",$/;"	s	object:dependencies.node-libs-browser.requires
 constants-browserify	package-lock.json	/^    "constants-browserify": {$/;"	o	object:dependencies
 constructor	src/App.js	/^	constructor(props) {$/;"	m	class:ComicStrip
+constructor	src/App.js	/^	constructor(props) {$/;"	m	class:Comparitor
 contains-path	package-lock.json	/^        "contains-path": "^0.1.0",$/;"	s	object:dependencies.eslint-plugin-import.requires
 contains-path	package-lock.json	/^    "contains-path": {$/;"	o	object:dependencies
 content-disposition	package-lock.json	/^        "content-disposition": "0.5.2",$/;"	s	object:dependencies.express.requires
@@ -2553,6 +2557,7 @@ functional-red-black-tree	package-lock.json	/^        "functional-red-black-tree
 functional-red-black-tree	package-lock.json	/^    "functional-red-black-tree": {$/;"	o	object:dependencies
 gauge	package-lock.json	/^            "gauge": "~2.7.3",$/;"	s	object:dependencies.fsevents.dependencies.npmlog.requires
 gauge	package-lock.json	/^        "gauge": {$/;"	o	object:dependencies.fsevents.dependencies
+generate	src/App.js	/^	generate(){$/;"	m	class:Comparitor
 get-caller-file	package-lock.json	/^            "get-caller-file": "^1.0.1",$/;"	s	object:dependencies.webpack-dev-server.dependencies.yargs.requires
 get-caller-file	package-lock.json	/^        "get-caller-file": "^1.0.1",$/;"	s	object:dependencies.yargs.requires
 get-caller-file	package-lock.json	/^    "get-caller-file": {$/;"	o	object:dependencies
@@ -2568,6 +2573,7 @@ get-value	package-lock.json	/^        "get-value": "^2.0.6",$/;"	s	object:depend
 get-value	package-lock.json	/^        "get-value": "^2.0.6",$/;"	s	object:dependencies.has-value.requires
 get-value	package-lock.json	/^        "get-value": "^2.0.6",$/;"	s	object:dependencies.union-value.requires
 get-value	package-lock.json	/^    "get-value": {$/;"	o	object:dependencies
+getPanelIds	src/App.js	/^	getPanelIds(){$/;"	m	class:ComicStrip
 getpass	package-lock.json	/^        "getpass": "^0.1.1",$/;"	s	object:dependencies.sshpk.requires
 getpass	package-lock.json	/^    "getpass": {$/;"	o	object:dependencies
 glob	package-lock.json	/^            "glob": "^7.0.3",$/;"	s	object:dependencies.del.dependencies.globby.requires
@@ -2897,6 +2903,9 @@ icss-replace-symbols	package-lock.json	/^        "icss-replace-symbols": "^1.1.0
 icss-replace-symbols	package-lock.json	/^    "icss-replace-symbols": {$/;"	o	object:dependencies
 icss-utils	package-lock.json	/^        "icss-utils": "^2.1.0",$/;"	s	object:dependencies.css-loader.requires
 icss-utils	package-lock.json	/^    "icss-utils": {$/;"	o	object:dependencies
+idA	src/App.js	/^			idA: 1,$/;"	p	class:ComicStrip.constructor.state
+idB	src/App.js	/^			idB: 2,$/;"	p	class:ComicStrip.constructor.state
+idC	src/App.js	/^			idC: 3$/;"	p	class:ComicStrip.constructor.state
 identity-obj-proxy	package-lock.json	/^        "identity-obj-proxy": "3.0.0",$/;"	s	object:dependencies.react-scripts.requires
 identity-obj-proxy	package-lock.json	/^    "identity-obj-proxy": {$/;"	o	object:dependencies
 ieee754	package-lock.json	/^        "ieee754": "^1.1.4",$/;"	s	object:dependencies.buffer.requires
@@ -6224,9 +6233,6 @@ p-try	package-lock.json	/^        "p-try": {$/;"	o	object:dependencies.webpack-d
 p-try	package-lock.json	/^    "p-try": {$/;"	o	object:dependencies
 pako	package-lock.json	/^        "pako": "~1.0.5"$/;"	s	object:dependencies.browserify-zlib.requires
 pako	package-lock.json	/^    "pako": {$/;"	o	object:dependencies
-panelA	src/App.js	/^			panelA: ".\/panels\/1985-08-05a.gif",$/;"	p	class:ComicStrip.constructor.state
-panelB	src/App.js	/^			panelB: ".\/panels\/1985-08-05b.gif",$/;"	p	class:ComicStrip.constructor.state
-panelC	src/App.js	/^			panelC: ".\/panels\/1985-08-05c.gif"$/;"	p	class:ComicStrip.constructor.state
 parallel-transform	package-lock.json	/^            "parallel-transform": "^1.1.0",$/;"	s	object:dependencies.uglifyjs-webpack-plugin.dependencies.mississippi.requires
 parallel-transform	package-lock.json	/^        "parallel-transform": "^1.1.0",$/;"	s	object:dependencies.mississippi.requires
 parallel-transform	package-lock.json	/^    "parallel-transform": {$/;"	o	object:dependencies
@@ -6901,6 +6907,7 @@ remove-trailing-separator	package-lock.json	/^        "remove-trailing-separator
 remove-trailing-separator	package-lock.json	/^    "remove-trailing-separator": {$/;"	o	object:dependencies
 render	src/App.js	/^	render() {$/;"	m	class:App
 render	src/App.js	/^	render() {$/;"	m	class:ComicStrip
+render	src/App.js	/^	render() {$/;"	m	class:Comparitor
 renderkid	package-lock.json	/^        "renderkid": "^2.0.1",$/;"	s	object:dependencies.pretty-error.requires
 renderkid	package-lock.json	/^    "renderkid": {$/;"	o	object:dependencies
 repeat-element	package-lock.json	/^            "repeat-element": "^1.1.2",$/;"	s	object:dependencies.anymatch.dependencies.braces.requires
@@ -11202,6 +11209,9 @@ url-parse	package-lock.json	/^            "url-parse": "^1.4.3"$/;"	s	object:dep
 url-parse	package-lock.json	/^        "url-parse": "^1.1.8"$/;"	s	object:dependencies.sockjs-client.requires
 url-parse	package-lock.json	/^        "url-parse": "^1.4.3"$/;"	s	object:dependencies.original.requires
 url-parse	package-lock.json	/^    "url-parse": {$/;"	o	object:dependencies
+urlA	src/App.js	/^			urlA: ".\/panels\/1985-08-05a.gif",$/;"	p	class:ComicStrip.constructor.state
+urlB	src/App.js	/^			urlB: ".\/panels\/1985-08-05b.gif",$/;"	p	class:ComicStrip.constructor.state
+urlC	src/App.js	/^			urlC: ".\/panels\/1985-08-05c.gif",$/;"	p	class:ComicStrip.constructor.state
 use	package-lock.json	/^        "use": "^3.1.0"$/;"	s	object:dependencies.snapdragon.requires
 use	package-lock.json	/^    "use": {$/;"	o	object:dependencies
 util	package-lock.json	/^        "util": "0.10.3"$/;"	s	object:dependencies.assert.requires
@@ -13232,6 +13242,7 @@ version	package-lock.json	/^  "version": "0.1.0",$/;"	s
 version	package.json	/^  "version": "0.1.0",$/;"	s
 vm-browserify	package-lock.json	/^        "vm-browserify": "0.0.4"$/;"	s	object:dependencies.node-libs-browser.requires
 vm-browserify	package-lock.json	/^    "vm-browserify": {$/;"	o	object:dependencies
+vote	src/App.js	/^	vote(type,ids){$/;"	m	class:Comparitor
 w3c-hr-time	package-lock.json	/^            "w3c-hr-time": "^1.0.1",$/;"	s	object:dependencies.jest-environment-jsdom.dependencies.jsdom.requires
 w3c-hr-time	package-lock.json	/^        "w3c-hr-time": "^1.0.1",$/;"	s	object:dependencies.jsdom.requires
 w3c-hr-time	package-lock.json	/^    "w3c-hr-time": {$/;"	o	object:dependencies
