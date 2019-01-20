@@ -1,7 +1,5 @@
 import React, { Component } from 'react';
 import Comparitor from './components/Comparitor';
-
-import logo from './logo.svg';
 import './App.css';
 
 class App extends Component {

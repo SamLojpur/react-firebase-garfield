@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import ComicStrip from './ComicStrip';
+import axios from 'axios';
 
 export default class Comparitor extends Component {
 	constructor(props) {
@@ -13,15 +14,20 @@ export default class Comparitor extends Component {
 	}
 
 	generate(){
-		/* axios.get(url).then( res => {
-			this.stripA.current.setState();
-			this.stripB.current.setState();
-		}) */
+		var	url = 'https://us-central1-searchforthebestgarfieldcomic.cloudfunctions.net/getPanel'
+		axios.get(url, { crossdomain: true }).then((response) => {
+			for( i in response.data){
+				if(i < 3){
+					stripA.setData
+				}
+			}
+			
+		});
 	}
 	
 	choose(choice) {
 		var upVote, downVote;
-		if (choice == 1){
+		if (choice === 1){
 			alert("you chose 1");
 			upVote = this.stripA.current.getPanelIds();
 			downVote = this.stripB.current.getPanelIds();
