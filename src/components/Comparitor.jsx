@@ -18,7 +18,12 @@ export default class Comparitor extends Component {
 		axios.get(url, { crossdomain: true }).then((res) => {
 			this.stripA.current.setState(
 				{urlA: "./panels/"+res.data[0].items, idA: res.data[0].id,
-				 urlB: "./panels/"+res.data[1].items, idB: res.data[1].id})	
+				 urlB: "./panels/"+res.data[1].items, idB: res.data[1].id,
+				 urlC: "./panels/"+res.data[2].items, idC: res.data[2].id});
+			this.stripB.current.setState(
+				{urlA: "./panels/"+res.data[3].items, idA: res.data[3].id,
+				 urlB: "./panels/"+res.data[4].items, idB: res.data[4].id,
+				 urlC: "./panels/"+res.data[5].items, idC: res.data[5].id});
 		});
 	}
 	
