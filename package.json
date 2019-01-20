@@ -12,7 +12,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "deploy": "firebase deploy"
+    "deploy": "firebase deploy",
+    "make": "react-scripts build && firebase deploy"
   },
   "eslintConfig": {
     "extends": "react-app"
