@@ -28,25 +28,40 @@ export default class Comparitor extends Component {
 	}
 	
 	choose(choice) {
-		var upVote, downVote;
+		var upIds, downIds;
 		if (choice === 1){
-			alert("you chose 1");
-			upVote = this.stripA.current.getPanelIds();
-			downVote = this.stripB.current.getPanelIds();
+			upIds = this.stripA.current.getPanelIds();
+			downIds = this.stripB.current.getPanelIds();
 		} else {
-			upVote = this.stripB.current.getPanelIds();
-			downVote = this.stripA.current.getPanelIds();
-			alert("you chose 2")
+			upIds = this.stripB.current.getPanelIds();
+			downIds = this.stripA.current.getPanelIds();
 		}
 
-		this.vote(1,upVote);
-		this.vote(-1,downVote);
+		this.vote(upIds,downIds);
 
 		this.generate();
 	}
 
-	vote(weight,ids){
-		alert("add "+weight+" to panels: "+ids);
+	vote(upIds, downIds){
+		const updateData = {
+			up: {
+					A: upIds[0],
+					B: upIds[1],
+					C: upIds[2]
+				},
+			down: {
+					A: downIds[0],
+					B: downIds[1],
+					C: downIds[2]
+				}
+		}
+		
+		var url = 'https://us-central1-searchforthebestgarfieldcomic.cloudfunctions.net/panelUpdate';
+		axios.post(url, {updateData}).then( res => {
+			console.log(res);
+			console.log(res.data);
+		})
+	
 	}
 
 	render() {
