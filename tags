@@ -6224,9 +6224,9 @@ p-try	package-lock.json	/^        "p-try": {$/;"	o	object:dependencies.webpack-d
 p-try	package-lock.json	/^    "p-try": {$/;"	o	object:dependencies
 pako	package-lock.json	/^        "pako": "~1.0.5"$/;"	s	object:dependencies.browserify-zlib.requires
 pako	package-lock.json	/^    "pako": {$/;"	o	object:dependencies
-panelA	src/App.js	/^			panelA: "idfsdf",$/;"	p	class:ComicStrip.constructor.state
-panelB	src/App.js	/^			panelB: "",$/;"	p	class:ComicStrip.constructor.state
-panelC	src/App.js	/^			panelC: ""$/;"	p	class:ComicStrip.constructor.state
+panelA	src/App.js	/^			panelA: ".\/panels\/1985-08-05a.gif",$/;"	p	class:ComicStrip.constructor.state
+panelB	src/App.js	/^			panelB: ".\/panels\/1985-08-05b.gif",$/;"	p	class:ComicStrip.constructor.state
+panelC	src/App.js	/^			panelC: ".\/panels\/1985-08-05c.gif"$/;"	p	class:ComicStrip.constructor.state
 parallel-transform	package-lock.json	/^            "parallel-transform": "^1.1.0",$/;"	s	object:dependencies.uglifyjs-webpack-plugin.dependencies.mississippi.requires
 parallel-transform	package-lock.json	/^        "parallel-transform": "^1.1.0",$/;"	s	object:dependencies.mississippi.requires
 parallel-transform	package-lock.json	/^    "parallel-transform": {$/;"	o	object:dependencies
