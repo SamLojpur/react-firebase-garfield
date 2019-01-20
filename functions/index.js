@@ -6,9 +6,6 @@ admin.initializeApp();
 
 const database = admin.database().ref('/panels');
 
-exports.helloWorld = functions.https.onRequest((request, response) => {
-  response.send("Hello from a Severless Database!");
-});
 
 exports.addPanel = functions.https.onRequest((req, res) => {
   return cors(req, res, () => {
@@ -63,17 +60,16 @@ exports.getPanel = functions.https.onRequest((req, res) => {
         let Csum = 0;
         let length = 0;
 
-        let A1picture = null;
-        let B1picture = null;
-        let C1picture = null;
-        let A2picture = null;
-        let B2picture = null;
-        let C2picture = null;
+        var A1picture = null;
+        var B1picture = null;
+        var C1picture = null;
+        var A2picture = null;
+        var B2picture = null;
+        var C2picture = null;
 
         snapshot.forEach((item) => {
             length += 1;
             Asum += item.val().a;
-            console.log(Asum);
             Bsum += item.val().b;
             Csum += item.val().c;
         })
@@ -87,46 +83,48 @@ exports.getPanel = functions.https.onRequest((req, res) => {
 
         snapshot.forEach((item) => {
 
-        a1Index = item.val().a;
-        a2Index = item.val().a;
+        a1Index -= item.val().a;
+        console.log(a1Index)
+        a2Index -= item.val().a;
 
-        b1Index = item.val().b;
-        b2Index = item.val().b;
+        b1Index -= item.val().b;
+        b2Index -= item.val().b;
 
-        c1Index = item.val().c;
-        c2Index = item.val().c;
+        c1Index -= item.val().c;
+        c2Index -= item.val().c;
 
 
         if (a1Index <= 0 ){
-            A1picture = item;
-            a1Index = -999999999999
+            A1picture = {id:item.key, items:item.val().filename};
+            console.log("A point reached")
+            a1Index = 999999999999
         }
         if (a2Index <= 0 ){
-            A2picture = item;
-            a2Index = -999999999999
+            A2picture = {id:item.key, items:item.val().filename};
+            a2Index = 999999999999
         }
         if (b1Index <= 0 ){
-            B1picture = item;
-            b1Index = -999999999999
+            B1picture = {id:item.key, items:item.val().filename};
+            b1Index = 999999999999
         }
         if (b2Index <= 0 ){
-            B2picture = item;
-            b2Index = -999999999999
+            B2picture = {id:item.key, items:item.val().filename};
+            b2Index = 999999999999
         }
         if (c1Index <= 0 ){
-            C1picture = item;
-            c1Index = -999999999999
+            C1picture = {id:item.key, items:item.val().filename};
+            c1Index = 999999999999
         }
         if (c2Index <= 0 ){
-            C2picture = item;
-            c2Index = -999999999999
+            C2picture = {id:item.key, items:item.val().filename};
+            c2Index = 999999999999
         }
 
 
-          items.push({
-            id: item.key,
-            items: item.val().filename
-          });
+        //   items.push({
+        //     id: item.key,
+        //     items: item.val().filename
+        //   });
         });
         let panels = [
             A1picture,

@@ -56,11 +56,11 @@ export default class Comparitor extends Component {
 				}
 		}
 		
-		var url = 'https://us-central1-searchforthebestgarfieldcomic.cloudfunctions.net/panelUpdate';
-		axios.post(url, {updateData}).then( res => {
-			console.log(res);
-			console.log(res.data);
-		})
+		// var url = 'https://us-central1-searchforthebestgarfieldcomic.cloudfunctions.net/panelUpdate';
+		// axios.post(url, {updateData}).then( res => {
+		// 	console.log(res);
+		// 	console.log(res.data);
+		// })
 	
 	}
 
