@@ -27,6 +27,7 @@ yarn-debug.log*
 yarn-error.log*
 
 #panels
-
 /public/panels/*
 
+#API Key
+/src/Firebase.js
