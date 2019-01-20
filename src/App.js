@@ -1,12 +1,14 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
+import Panel from './component/Panel'
 
 class ComicStrip extends Component {
 	constructor(props) {
 		super(props);
+		
 		this.state = {
-			panelA: "./panels/1985-08-05a.gif",
+			panelA: "./panels/1985-08-05b.gif",
 			panelB: "./panels/1985-08-05b.gif",
 			panelC: "./panels/1985-08-05c.gif"
 		};
@@ -15,6 +17,7 @@ class ComicStrip extends Component {
 	render() {
 		return (
 			<div className="reconComic">
+				<Panel></Panel>
 				<img src={this.state.panelA} />
 				<img src={this.state.panelB} />
 				<img src={this.state.panelC} />
@@ -22,6 +25,7 @@ class ComicStrip extends Component {
 		);
 	}
 }
+
 
 
 class App extends Component {
