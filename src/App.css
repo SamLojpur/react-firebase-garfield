@@ -23,7 +23,9 @@
 }
 
 .panelImg {
-	height: 27vw;	
+	height: 27vw;
+	max-height: 40vh;
+	margin: 20px 0 20px	0
 }
 
 
